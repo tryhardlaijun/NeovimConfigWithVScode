@@ -1,0 +1,2 @@
+require("wenju")
+print("Hello")
