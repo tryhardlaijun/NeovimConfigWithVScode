@@ -1,3 +1,2 @@
 require("wenju.remap")
-require("wenju.packer")
-print("Wen Ju Init")
+require("wenju.personal_functions")

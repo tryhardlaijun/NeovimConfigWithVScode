@@ -1,2 +1,0 @@
-require("wenju")
-print("Hello")
