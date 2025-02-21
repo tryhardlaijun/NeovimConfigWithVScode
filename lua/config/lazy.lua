@@ -14,12 +14,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
-
+vim.opt.showmatch = true        -- Highlight matching parenthesis
+vim.opt.ignorecase = true        -- Ignore lowercase for the whole pattern
+vim.opt.smartcase = true        -- Ignore lowercase for the whole pattern
+vim.opt.smartindent = true      -- Do smart autoindenting when starting new lines
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = ";"
-vim.g.maplocalleader = ";"
 
 -- Setup lazy.nvim
 require("lazy").setup({
